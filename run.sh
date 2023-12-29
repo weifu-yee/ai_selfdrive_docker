@@ -19,7 +19,7 @@ echo -e "\n$BANNER\n"
 SELECTED_PATH=$(realpath "$(pwd)")
 USER_UID=$(id -u)
 USER_GID=$(id -g)
-IMAGE_NAME="ai-selfdrive"
+IMAGE_NAME="wtarvasm533/ai-selfdrive"
 echo "SELECTED_PATH:   $SELECTED_PATH"
 
 # Detect user's os if not linux then exit
@@ -41,11 +41,13 @@ if ! [ -x "$(command -v docker)" ]; then
 	sudo usermod -aG docker $(whoami)
 fi
 
-Check if image is installed
+# Check if image is installed
 if ! docker image inspect $IMAGE_NAME &>/dev/null; then
 	echo "$IMAGE_NAME image is not installed."
-	echo "Building $IMAGE_NAME image..."
-	docker build -t $IMAGE_NAME .
+	echo "Pulling wtarvasm533/ai-selfdrive image..."
+	docker pull $IMAGE_NAME
+	# echo "Building $IMAGE_NAME image..."
+	# docker build -t $IMAGE_NAME .
 fi
 
 # Check if data folder exists
