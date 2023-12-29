@@ -1,0 +1,12 @@
+casadi
+libusb1
+cython
+pycapnp
+numpy
+pycryptodome
+hatanaka
+pycurl
+atomicwrites
+sympy
+cffi
+zmq

@@ -1,0 +1,4 @@
+PyYAML
+certifi
+smbus2
+setproctitle

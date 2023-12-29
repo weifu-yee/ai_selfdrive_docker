@@ -1,0 +1,39 @@
+version: "3"
+services:
+  ros-go-noetic:
+    # build: .
+    image: rosgo/ros-noetic:latest
+    container_name: ros-go-noetic
+    stdin_open: true
+    tty: true
+    privileged: false
+    command: /bin/bash
+    network_mode: host
+
+  # ros2:
+  #   build: .
+  #   image: ros2-humble
+  #   container_name: ros2-humble
+  #   stdin_open: true
+  #   tty: true
+  #   privileged: true
+  #   command: /bin/bash
+  #   network_mode: host
+  #   working_dir: /home/user/ros2_ws
+  #   # Turn on gpu access
+  #   # Reference : https://docs.docker.com/compose/gpu-support/
+  #   deploy:
+  #     resources:
+  #       reservations:
+  #         devices:
+  #           - driver: nvidia
+  #             count: all
+  #             capabilities: [ gpu ]
+  #   environment:
+  #     - DISPLAY=192.168.1.104:0.0
+  #     - ROS2_WS=/home/user/ros2_ws
+  #     - RCUTILS_COLORIZED_OUTPUT=0
+  #   volumes:
+  #     - ./cache/.gazebo:/home/user/.gazebo
+  #     # Mount workspace
+  #     - ..:/home/user/ros2_ws
