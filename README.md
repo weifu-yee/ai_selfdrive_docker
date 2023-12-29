@@ -26,3 +26,4 @@ Now run the following command:
 ```
 ./tmux.sh
 ```
+https://github.com/weifu-yee/ai_selfdrive_docker/blob/master/Output.png
