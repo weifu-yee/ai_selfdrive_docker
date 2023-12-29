@@ -31,4 +31,7 @@ Now run the following command:
 ./tmux.sh
 ```
 
-# Snipshots
+#Snipshots
+
+https://github.com/weifu-yee/ai_selfdrive_docker/blob/master/Output.png
+https://github.com/weifu-yee/ai_selfdrive_docker/blob/master/Output.png
