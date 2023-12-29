@@ -11,10 +11,14 @@
         AI selfdrive Script by: @ChenWeiFu , reference from @SeanChangX
 -----------------------------------------------------------------------
 ```
-
+## Github
+Easily use git clone to get the folder: ai-selfdrive, and 'cd' into it
+```
+https://github.com/weifu-yee/ai_selfdrive_docker.git
+```
 ## Usage
 
-To use the AI selfdrive script, run the following command:
+To use the AI selfdrive script, in the ai-selfdrive, run the following command:
 (first build image will cost a long time!!)
 ```
 ./run.sh
@@ -26,3 +30,5 @@ Now run the following command:
 ```
 ./tmux.sh
 ```
+
+# Snipshots
